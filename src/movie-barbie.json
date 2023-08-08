@@ -1,0 +1,59 @@
+{
+  "budget": 145000000,
+  "global_revenue": 811024676,
+  "poster_path": "https://www.themoviedb.org/t/p/w1280/iuFNMS8U5cb6xfzi51Dbkovj7vM.jpg",
+  "release_date": "2023-07-19",
+  "title": "Barbie",
+  "vote_average": 7.52,
+  "vote_count": 1930,
+  "domestic_daily": [
+    {
+      "revenue": 70503178,
+      "date": "2023-07-21"
+    },
+    {
+      "revenue": 118315534,
+      "date": "2023-07-22"
+    },
+    {
+      "revenue": 162022044,
+      "date": "2023-07-23"
+    },
+    {
+      "revenue": 188127211,
+      "date": "2023-07-24"
+    },
+    {
+      "revenue": 214130780,
+      "date": "2023-07-25"
+    },
+    {
+      "revenue": 237164831,
+      "date": "2023-07-26"
+    },
+    {
+      "revenue": 258402851,
+      "date": "2023-07-27"
+    },
+    {
+      "revenue": 287435512,
+      "date": "2023-07-28"
+    },
+    {
+      "revenue": 322021941,
+      "date": "2023-07-29"
+    },
+    {
+      "revenue": 351414453,
+      "date": "2023-07-30"
+    },
+    {
+      "revenue": 366422042,
+      "date": "2023-07-31"
+    },
+    {
+      "revenue": 381724676,
+      "date": "2023-08-01"
+    }
+  ]
+}

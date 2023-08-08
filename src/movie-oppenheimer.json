@@ -1,0 +1,59 @@
+{
+  "budget": 100000000,
+  "global_revenue": 419427495,
+  "poster_path": "https://www.themoviedb.org/t/p/w1280/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+  "release_date": "2023-07-19",
+  "title": "Oppenheimer",
+  "vote_average": 8.3,
+  "vote_count": 1183,
+  "domestic_daily": [
+    {
+      "revenue": 33017635,
+      "date": "2023-07-21"
+    },
+    {
+      "revenue": 59265775,
+      "date": "2023-07-22"
+    },
+    {
+      "revenue": 82455420,
+      "date": "2023-07-23"
+    },
+    {
+      "revenue": 95127370,
+      "date": "2023-07-24"
+    },
+    {
+      "revenue": 107200900,
+      "date": "2023-07-25"
+    },
+    {
+      "revenue": 117856745,
+      "date": "2023-07-26"
+    },
+    {
+      "revenue": 127860430,
+      "date": "2023-07-27"
+    },
+    {
+      "revenue": 141287905,
+      "date": "2023-07-28"
+    },
+    {
+      "revenue": 159505020,
+      "date": "2023-07-29"
+    },
+    {
+      "revenue": 174566060,
+      "date": "2023-07-30"
+    },
+    {
+      "revenue": 181420520,
+      "date": "2023-07-31"
+    },
+    {
+      "revenue": 188402495,
+      "date": "2023-08-01"
+    }
+  ]
+}
