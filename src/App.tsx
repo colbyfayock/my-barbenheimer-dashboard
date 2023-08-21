@@ -1,9 +1,18 @@
-import { Card, Metric, Text, Title, DonutChart } from "@tremor/react";
+import { Card, Metric, Text, Title, DonutChart, LineChart } from "@tremor/react";
 
 import './App.css'
 
 import dataBarbie from './movie-barbie.json';
 import dataOppenheimer from './movie-oppenheimer.json';
+
+const chartData = dataBarbie.domestic_daily.map(({ revenue, date }) => {
+  const oppenheimer = dataOppenheimer.domestic_daily.find(opp => opp.date === date);
+  return {
+    date,
+    Barbie: revenue,
+    Oppenheimer: oppenheimer?.revenue
+  }
+})
 
 function App() {
   return (
@@ -72,6 +81,17 @@ function App() {
           </Card>
         </div>
       </div>
+      <Card className="mt-8">
+        <Title>Domestic Daily</Title>
+        <LineChart
+          className="mt-6"
+          data={chartData}
+          index="year"
+          categories={["Barbie", "Oppenheimer"]}
+          colors={["pink", "gray"]}
+          yAxisWidth={120}
+        />
+      </Card>
     </div>
   )
 }
