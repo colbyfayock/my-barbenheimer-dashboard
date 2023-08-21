@@ -14,6 +14,16 @@ const chartData = dataBarbie.domestic_daily.map(({ revenue, date }) => {
   }
 })
 
+function addCommasToNumber(number: number) {
+  // Convert the number to a string
+  let numString = number.toString();
+  
+  // Use regex to add commas to the string representation of the number
+  numString = numString.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  
+  return numString;
+}
+
 function App() {
   return (
     <div className="text-left">
@@ -42,11 +52,11 @@ function App() {
           </Card>
           <Card className="max-w-xs mx-auto mb-6" decoration="top" decorationColor="indigo">
             <Text>Revenue</Text>
-            <Metric>${ dataBarbie.global_revenue }</Metric>
+            <Metric>${ addCommasToNumber(dataBarbie.global_revenue) }</Metric>
           </Card>
           <Card className="max-w-xs mx-auto mb-6" decoration="top" decorationColor="indigo">
             <Text>Budget</Text>
-            <Metric>${ dataBarbie.budget }</Metric>
+            <Metric>${ addCommasToNumber(dataBarbie.budget) }</Metric>
           </Card>
         </div>
         <div>
@@ -73,11 +83,11 @@ function App() {
           </Card>
           <Card className="max-w-xs mx-auto mb-6" decoration="top" decorationColor="indigo">
             <Text>Revenue</Text>
-            <Metric>${ dataOppenheimer.global_revenue }</Metric>
+            <Metric>${ addCommasToNumber(dataOppenheimer.global_revenue) }</Metric>
           </Card>
           <Card className="max-w-xs mx-auto mb-6" decoration="top" decorationColor="indigo">
             <Text>Budget</Text>
-            <Metric>${ dataOppenheimer.budget }</Metric>
+            <Metric>${ addCommasToNumber(dataOppenheimer.budget) }</Metric>
           </Card>
         </div>
       </div>
@@ -90,6 +100,7 @@ function App() {
           categories={["Barbie", "Oppenheimer"]}
           colors={["pink", "gray"]}
           yAxisWidth={120}
+          valueFormatter={addCommasToNumber}
         />
       </Card>
     </div>
