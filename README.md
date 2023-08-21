@@ -2,7 +2,7 @@
 
 Demo for tutorial [Build Dashboards for Data Visualization in React with Tremor & Tailwind](https://www.youtube.com/watch?v=LAWjsToL7tQ)
 
-📝 Article: 
+📝 Article: https://spacejelly.dev/posts/how-to-build-data-dashboards-in-react-with-tremor-tailwind/
 
 📺 YouTube: https://www.youtube.com/watch?v=LAWjsToL7tQ
 
